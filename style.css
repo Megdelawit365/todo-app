@@ -1,0 +1,280 @@
+body {
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+
+h1 {
+    text-align: center;
+}
+
+#addBtn {
+    all: unset;
+    border-radius: 0.5rem;
+}
+
+#addBtn img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+}
+
+.search {
+    margin: 1rem auto;
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+    /* gap: 1rem; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search input {
+    all: unset;
+    width: fit-content;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    flex: 1;
+    background-color: white;
+}
+
+.search select {
+    width: 8rem;
+    flex: 1;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.search option {
+    text-align: center;
+}
+
+#task-container {
+    margin: auto;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.task {
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.task:hover {
+    transform: scale(1.03);
+}
+
+.task .left,
+.task .right {
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.task img {
+    width: 1.2rem;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.task img:hover {
+    transform: scale(1.2);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.description h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+.task p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.task input {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.dueDate {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.dueDate img {
+    width: 0.9rem;
+}
+
+.dueDate p {
+    font-size: 0.8rem;
+    color: rgba(119, 103, 229, 0.7);
+    font-weight: 700;
+    margin: 0;
+}
+
+.completed {
+    text-decoration: line-through;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-decoration-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.completed h2,
+.completed p {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+option {
+    all: unset;
+    padding: 10rem;
+}
+
+#add-task,
+#edit-task {
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+    width: 46rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+#add-task input,
+#add-task textarea,
+#edit-task input,
+#edit-task textarea {
+    all: unset;
+}
+
+#add-task hr,
+#edit-task hr {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#add-task #task-title,
+#edit-task #task-title-edit {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+#add-task #task-description,
+#edit-task #task-description-edit {
+    height: 3rem;
+    text-align: start;
+}
+
+#add-task .bottom,
+#edit-task .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.due-date {
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+}
+
+#add-task select,
+#edit-task select {
+    width: 11.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    padding-right: 0;
+    flex: 1;
+}
+
+.bottom input {
+    color: rgba(0, 0, 0, 0.5);
+    flex: 1;
+
+}
+
+.bottom button {
+    all: unset;
+    background-color: #7767e5;
+    padding: 0.7rem 1.2rem;
+    color: white;
+    /* width: 6rem; */
+    text-align: center;
+    border-radius: 0.5rem;
+    flex: 1;
+
+}
+
+.hide {
+    display: none !important;
+}
+
+.info-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.category img {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+.dueDate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dueDate img {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+.info-row p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: rgba(119, 103, 229, 0.7);
+    font-weight: 700;
+}

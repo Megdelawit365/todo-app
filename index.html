@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>TODO LIST</h1>
+    <div class="search">
+        <input placeholder="Search Tasks..." type="text" name="" id="search-input">
+        <!-- <select name="" id="">
+            <option value="">
+                Sort Tasks By
+            </option>
+        </select> -->
+        <button id="addBtn"><img src="./images/plus.png" alt=""></button>
+    </div>
+    <div id="add-task" class="hide">
+        <input type="text" id="task-title" placeholder="Title">
+        <hr>
+        <textarea type="text" id="task-description" placeholder="Description"></textarea>
+        <div class="bottom">
+            <div class="due-date">
+                <label for="">Due Date:</label>
+                <input type="date" id="dueDate">
+            </div>
+
+            <select name="" id="category">
+                <option value="">Select a category</option>
+                <option value="School">School</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+            </select>
+            <button id="task-submit">Add Task</button>
+        </div>
+    </div>
+    <div id="edit-task" class="hide">
+        <input type="text" id="task-title-edit" placeholder="Title">
+        <hr>
+        <textarea id="task-description-edit" placeholder="Description"></textarea>
+        <div class="bottom">
+            <div class="due-date">
+                <label for="">Due Date:</label>
+                <input type="date" id="dueDate-edit">
+            </div>
+            <select id="task-category-edit">
+                <option value="">Select a category</option>
+                <option value="School">School</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+            </select>
+            <button id="edit-task-submit">Save Changes</button>
+        </div>
+    </div>
+
+    <div id="task-container">
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
