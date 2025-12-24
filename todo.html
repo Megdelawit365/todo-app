@@ -9,15 +9,22 @@
 </head>
 
 <body>
-    <h1>TODO LIST</h1>
+
     <div class="search">
-        <input placeholder="Search Tasks..." type="text" name="" id="search-input">
-        <!-- <select name="" id="">
-            <option value="">
-                Sort Tasks By
-            </option>
-        </select> -->
-        <button id="addBtn"><img src="./images/plus.png" alt=""></button>
+        <h1>TODO LIST</h1>
+        <div class="flex-row">
+            <div class="filter">
+                <select id="category-filter">
+                    <option value="">Filter By Category</option>
+                    <option value="School">School</option>
+                    <option value="Work">Work</option>
+                    <option value="Personal">Personal</option>
+                </select>
+            </div>
+
+            <button id="addBtn"><img src="./images/plus.png" alt=""></button>
+        </div>
+
     </div>
     <div id="add-task" class="hide">
         <input type="text" id="task-title" placeholder="Title">
@@ -57,10 +64,11 @@
         </div>
     </div>
 
+
     <div id="task-container">
 
     </div>
-    <script src="./script.js"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>

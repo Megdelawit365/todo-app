@@ -47,12 +47,9 @@ h1 {
     font-size: 1rem;
     border-radius: 0.5rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
-
+    padding: 1rem;
 }
 
-.search option {
-    text-align: center;
-}
 
 #task-container {
     margin: auto;
@@ -227,7 +224,7 @@ option {
 
 .bottom button {
     all: unset;
-    background-color: #7767e5;
+    background-color: #6401c4;
     padding: 0.7rem 1.2rem;
     color: white;
     /* width: 6rem; */
@@ -277,4 +274,14 @@ option {
     font-size: 0.8rem;
     color: rgba(119, 103, 229, 0.7);
     font-weight: 700;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.flex-row select {
+    width: 12rem;
 }
